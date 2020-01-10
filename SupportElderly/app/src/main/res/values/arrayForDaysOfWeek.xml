@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="days_abbreviated">
+        <item>Pon </item>
+        <item>Wt </item>
+        <item>Sr </item>
+        <item>Czw </item>
+        <item>Pt </item>
+        <item>Sob </item>
+        <item>Nd </item>
+    </string-array>
+
+</resources>

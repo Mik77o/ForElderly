@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="0dp"
+        android:background="@layout/border_for_list_of_medicines"
+        android:padding="4dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/medicine_icon" />
+
+    <TextView
+        android:id="@+id/txtMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgMedicines"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_for_entry"
+        android:text="@string/medicine_name"
+        android:textAlignment="center"
+        android:textColor="@color/plain_white"
+        android:textColorHint="@color/plain_white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtDose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMedicines"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_for_entry"
+        android:text="@string/dose"
+        android:textAlignment="center"
+        android:textColor="@color/plain_white"
+        android:textColorHint="@color/plain_white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDose"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_for_entry"
+        android:text="@string/frequency"
+        android:textAlignment="center"
+        android:textColor="@color/plain_white"
+        android:textColorHint="@color/plain_white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFrequency"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_for_entry"
+        android:text="@string/place"
+        android:textAlignment="center"
+        android:textColor="@color/plain_white"
+        android:textColorHint="@color/plain_white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

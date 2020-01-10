@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ForElderly</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Main ActivityForAlarms/Fragment -->
+    <string name="empty_view_text">Aby dodać alarm naciśnij różowe kółko!</string>
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">Ustaw czas alarmu</string>
+    <string name="label">Opis alarmu</string>
+    <string name="image_alarm">Zdjęcie leku</string>
+    <string name="days">Dni</string>
+    <string name="edit_alarm">Edytuj alarm</string>
+    <string name="add_alarm">Dodaj alarm</string>
+    <string name="add_label_hint">Szczegóły!</string>
+    <string name="update_complete">Zmiany zostały zapisane.</string>
+    <string name="update_failed">Aktualizacja alarmu nie powiodła się.</string>
+    <string name="delete_complete">Alarm został usunięty.</string>
+    <string name="delete_failed">Usuwanie nie powiodło się.</string>
+    <string name="delete_dialog_title">Potwierdź usnięcie alarmu</string>
+    <string name="delete_dialog_content">Jesteś pewny/a, że chcesz usunąć ten alarm?</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">Zapisz</string>
+    <string name="action_delete">Usuń</string>
+
+    <!-- Alarm Landing Page Activity/Fragment -->
+    <string name="launch_main_activity">Przejdź do aplikacji</string>
+    <string name="dismiss">Potwierdzam wzięcie leku</string>
+
+    <!-- Days -->
+    <string name="monday">Poniedziałek</string>
+    <string name="tuesday">Wtorek</string>
+    <string name="wednesday">Sroda</string>
+    <string name="thursday">Czwartek</string>
+    <string name="friday">Piątek</string>
+    <string name="saturday">Sobota</string>
+    <string name="sunday">Niedziela</string>
+
+    <!-- Notification -->
+    <string name="channel_name">ForElderly</string>
+
+    <!-- CalendarActivity -->
+    <string name="termin">Termin</string>
+
+    <!-- CallActivity -->
+    <string name="numer_telefonu">Numer telefonu</string>
+    <string name="dzwon">Dzwoń</string>
+
+    <!-- CallForHelpActivity -->
+    <string name="dzwon_do_opiekuna">Dzwoń do opiekuna</string>
+    <string name="dzwon_pod_999">Dzwoń pod 999</string>
+    <string name="dzwon_pod_998">Dzwoń pod 998</string>
+    <string name="dzwon_pod_997">Dzwoń pod 997</string>
+
+    <!-- MainActivity -->
+    <string name="pomoc">Pomoc!</string>
+    <string name="zadzwon">Zadzwoń</string>
+    <string name="sms">Sms</string>
+    <string name="polozenie">Położenie</string>
+    <string name="leki">Leki</string>
+    <string name="alarmy">Alarmy</string>
+    <string name="zdjecie_zmiany_stanu_latarki">Zdjęcie zmiany stanu latarki</string>
+
+    <!-- MainMedicinesActivity -->
+    <string name="podaj_nazwe_leku">Podaj nazwę leku</string>
+    <string name="dawka">Dawka</string>
+    <string name="czestotliwosc_stosowania">Częstotliwość stosowania</string>
+    <string name="miejsce_leku">Miejsce leku</string>
+    <string name="medicine">medicine</string>
+    <string name="zdjecie_leku">Zdjęcie leku</string>
+    <string name="zapisz_informacje_o_leku">Zapisz informację o leku</string>
+    <string name="wyswietl_liste_lekow">Wyświetl listę leków</string>
+
+    <!-- SettingsActivity -->
+    <string name="zapisz_numer_ratunkowy">Zapisz numer ratunkowy</string>
+    <string name="numer_telefonu_s">Numer telefonu</string>
+    <string name="nazwa_opiekuna">Nazwa opiekuna</string>
+    <string name="zapisz">Zapisz</string>
+    <string name="wyswietl">Wyświetl</string>
+    <string name="usun_s">Usuń</string>
+    <string name="tryb_zegar_alarmy_nieaktywny">Tryb zegar (alarmy) - nieaktywny</string>
+    <string name="logowanie_z_haslem">Logowanie z hasłem</string>
+    <string name="dane_logowania_nie_sa_ustawione">Dane logowania nie są ustawione</string>
+    <string name="nazwa_uzytkownika">Nazwa użytkownika</string>
+    <string name="haslo">Hasło</string>
+    <string name="ustaw">Ustaw</string>
+    <string name="app_info">ForElderly (wersja 1.0)</string>
+
+    <!-- SmsActivity -->
+    <string name="numer_telefonu_sms">Numer telefonu</string>
+    <string name="kliknij_tutaj_aby_napisac_sms">Kliknij tutaj, aby napisać sms…</string>
+    <string name="anuluj_sms">Anuluj</string>
+    <string name="wyslij_sms">Wyślij</string>
+    <string name="usun_wiadomosc">Usuń</string>
+    <string name="wiadomosc_nie_zostala_jeszcze_wyslana">Wiadomość nie została jeszcze wysłana.</string>
+    <string name="wiadomosc_nie_zostala_jeszcze_dostarczona">Wiadomość nie została jeszcze dostarczona.</string>
+
+    <!-- CustomAlertDialog -->
+    <string name="image_alert_dialog_description">image</string>
+
+    <!-- EditSettingsForAlarmFragment -->
+    <string name="wybierz_zdjecie">Wybierz zdjęcie</string>
+
+    <!-- login_window -->
+    <string name="zaloguj_sie">Zaloguj się</string>
+    <string name="nazwa_uzytkownika_login_panel">Nazwa użytkownika</string>
+    <string name="haslo_login_panel">Hasło</string>
+    <string name="zapamietaj_moje_dane">Zapamiętaj moje dane</string>
+    <string name="start">Start</string>
+
+    <!-- MedicinesList -->
+    <string name="lista_lekow_jest_pusta">Lista leków jest pusta.</string>
+    <string name="medicine_name">Medicine</string>
+    <string name="dose">Dose</string>
+    <string name="frequency">Frequency</string>
+    <string name="place">Place</string>
+
+    <!-- NavigationDrawer -->
+    <string name="uzytkownik_navigation">Użytkownik</string>
+    <string name="ustawienia">Ustawienia</string>
+
+    <!-- Update_medicine_info_window -->
+    <string name="nazwa_leku_update">Nazwa leku</string>
+    <string name="dawka_update">Dawka</string>
+    <string name="czestotliwosc_update">Częstotliwość</string>
+    <string name="miejsce_leku_update">Miejsce leku</string>
+    <string name="zaktualizuj">Zaktualizuj</string>
+
+</resources>

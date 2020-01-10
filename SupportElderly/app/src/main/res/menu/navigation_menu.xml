@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_g1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/helpItem"
+            android:icon="@drawable/ambulance"
+            android:title="@string/pomoc" />
+    </group>
+    <group
+        android:id="@+id/nav_g2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/callItem"
+            android:icon="@drawable/call_icon"
+            android:title="@string/zadzwon" />
+    </group>
+    <group
+        android:id="@+id/nav_g3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/smsItem"
+            android:icon="@drawable/sms"
+            android:title="@string/sms" />
+    </group>
+    <group
+        android:id="@+id/nav_g4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/localizationItem"
+            android:icon="@drawable/gps"
+            android:title="@string/polozenie" />
+    </group>
+    <group
+        android:id="@+id/nav_g5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/medicineItem"
+            android:icon="@drawable/medicine_icon"
+            android:title="@string/leki" />
+    </group>
+    <group
+        android:id="@+id/nav_g6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/alarmsItem"
+            android:icon="@drawable/bell"
+            android:title="@string/alarmy" />
+    </group>
+    <group
+        android:id="@+id/nav_g7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settingsItem"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/ustawienia" />
+    </group>
+    <group
+        android:id="@+id/nav_g8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logoutItem"
+            android:icon="@drawable/exit"
+            android:title="Wyloguj się" />
+    </group>
+</menu>
