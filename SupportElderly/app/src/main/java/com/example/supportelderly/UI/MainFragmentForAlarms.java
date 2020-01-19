@@ -1,6 +1,8 @@
 package com.example.supportelderly.UI;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -35,6 +37,8 @@ import com.example.supportelderly.View.EmptyRecyclerView;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static android.app.PendingIntent.FLAG_UPDATE_CURRENT;
+import static android.content.Context.ALARM_SERVICE;
 import static com.example.supportelderly.Helpers.ActionBarClassHelper.createCustomActionBar;
 import static com.example.supportelderly.UI.EditSettingsForAlarmActivity.ADD_ALARM;
 import static com.example.supportelderly.UI.EditSettingsForAlarmActivity.buildAddEditAlarmActivityIntent;
@@ -48,6 +52,7 @@ public final class MainFragmentForAlarms extends Fragment
     private LoadAlarmsReceiver mReceiver;
     private AlarmsAdapter mAdapter;
     private ActionBar actionBar;
+    private ArrayList<Alarm> tempAlarms;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -101,6 +106,7 @@ public final class MainFragmentForAlarms extends Fragment
     @Override
     public void onAlarmsLoaded(ArrayList<Alarm> alarms) {
         mAdapter.setAlarms(alarms);
+        tempAlarms = alarms;
     }
 
     @Override
@@ -119,7 +125,21 @@ public final class MainFragmentForAlarms extends Fragment
                         setCustomAlert("Usuwanie listy alarmów!", "Czy na pewno chcesz usunąć listę zapisanych alarmów?",
                                 getContext(), (dialog, which) -> {
                                     new DatabaseHelperForAlarms(getContext()).deleteAll();
+
+                                    final Intent intent = new Intent(getContext(), LoadAlarmsService.AlarmReceiver.class);
+                                    for (Alarm alarm : tempAlarms) {
+                                        final PendingIntent pIntent = PendingIntent.getBroadcast(
+                                                getContext(),
+                                                alarm.notificationId(),
+                                                intent,
+                                                FLAG_UPDATE_CURRENT
+                                        );
+                                        final AlarmManager manager = (AlarmManager) Objects.requireNonNull(getContext()).getSystemService(ALARM_SERVICE);
+                                        manager.cancel(pIntent);
+                                    }
+
                                     new BigToastClassHelper().setBigToast("Lista alarmów została usunięta", getContext(), true);
+                                    LoadAlarmsService.launchLoadAlarmsService(getContext());
                                     mAdapter.notifyDataSetChanged();
                                     (Objects.requireNonNull(getActivity())).onBackPressed();
                                 }, (dialog, which) -> dialog.dismiss());
@@ -128,5 +148,4 @@ public final class MainFragmentForAlarms extends Fragment
 
         return super.onOptionsItemSelected(item);
     }
-
 }
